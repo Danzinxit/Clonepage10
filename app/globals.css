@@ -80,3 +80,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Add your custom scrollbar styles here */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d6e8fd; /* Cor de fundo clara */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7ba5e3; /* Cor do 'pegador' da barra de rolagem */
+  border-radius: 10px;
+  border: 3px solid #d6e8fd; /* Espaço ao redor do 'pegador' */
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7ba5e3 #d6e8fd; /* thumb track */
+}
