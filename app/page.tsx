@@ -7,12 +7,24 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { CheckCircle, Code2, Copy, Rocket, Shield, Zap, Clock, Gift, Star, Check, Book } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useMetaPixel } from '@/hooks/useMetaPixel';
 
 const glassCard = 'bg-white/30 dark:bg-blue-900/30 backdrop-blur-lg border border-white/40 dark:border-blue-800/40 shadow-xl rounded-3xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl';
 const animatedButton = 'relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-500 to-blue-400 bg-[length:200%_200%] animate-gradient-x text-white font-bold rounded-xl shadow-lg hover:from-blue-700 hover:to-purple-600 transition-all duration-300';
 
 export default function Home() {
   const [openTestimonial, setOpenTestimonial] = useState<number | null>(null);
+  const { trackPurchase, trackLead } = useMetaPixel();
+
+  const handlePurchase = () => {
+    trackPurchase();
+    window.open('https://pay.cakto.com.br/b8vcnjr_401742', '_blank');
+  };
+
+  const handleLead = () => {
+    trackLead();
+    window.open('https://pay.cakto.com.br/b8vcnjr_401742', '_blank');
+  };
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-300 to-purple-200 dark:from-blue-950 dark:via-blue-900 dark:to-purple-900 animate-gradient-bg">
@@ -50,16 +62,14 @@ export default function Home() {
           </motion.div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
             <motion.div whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.97 }} className="w-full flex justify-center">
-              <a
-                href="https://pay.cakto.com.br/b8vcnjr_401742"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleLead}
                 className="text-lg px-8 py-4 flex items-center justify-center gap-2 font-bold rounded-xl shadow-lg bg-gradient-to-r from-blue-600 via-purple-500 to-blue-400 bg-[length:200%_200%] text-white transition-all duration-300 hover:brightness-110 hover:shadow-2xl focus:ring-4 focus:ring-blue-300 border-0 animate-gradient-x relative overflow-hidden w-full max-w-xs"
                 style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.25)' }}
               >
                 Garantir Minha Vaga
                 <Rocket className="ml-2 h-5 w-5" />
-              </a>
+              </button>
             </motion.div>
           </div>
         </motion.div>
@@ -395,15 +405,13 @@ export default function Home() {
               </motion.div>
             </div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} className="flex justify-center">
-              <a
-                href="https://pay.cakto.com.br/b8vcnjr_401742"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handlePurchase}
                 className="w-full bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 hover:from-blue-700 hover:to-blue-500 text-lg py-6 font-bold rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 max-w-xs text-white"
               >
                 Aproveitar Oferta Exclusiva
                 <Gift className="ml-2 h-5 w-5" />
-              </a>
+              </button>
             </motion.div>
             <p className="text-center text-sm text-muted-foreground flex items-center justify-center gap-2 mt-4">
               <Clock className="h-4 w-4" />
