@@ -79,12 +79,12 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="p-10 flex flex-col items-center bg-gradient-to-br from-white/60 via-blue-100/60 to-blue-200/60 dark:from-blue-900/60 dark:via-blue-950/60 dark:to-blue-900/60 backdrop-blur-2xl border border-white/50 dark:border-blue-800/50 shadow-2xl rounded-3xl">
-                <span className="mb-4 flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg">
-                  <Zap className="h-12 w-12 text-blue-600 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]" />
+              <Card className="p-6 md:p-10 flex flex-col items-center bg-gradient-to-br from-white/60 via-blue-100/60 to-blue-200/60 dark:from-blue-900/60 dark:via-blue-950/60 dark:to-blue-900/60 backdrop-blur-2xl border border-white/50 dark:border-blue-800/50 shadow-2xl rounded-3xl transition-all duration-300">
+                <span className="mb-4 flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg">
+                  <Zap className="h-10 w-10 md:h-12 md:w-12 text-blue-600 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]" />
                 </span>
-                <h3 className="text-2xl font-extrabold mb-3 text-blue-900 dark:text-blue-100">Clonagem Instantânea</h3>
-                <p className="text-muted-foreground text-center text-lg">
+                <h3 className="text-xl md:text-2xl font-extrabold mb-3 text-blue-900 dark:text-blue-100">Clonagem Instantânea</h3>
+                <p className="text-base md:text-lg text-muted-foreground text-center">
                   Clone qualquer site em segundos com nossa tecnologia de última geração.
                 </p>
               </Card>
@@ -96,12 +96,12 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="p-10 flex flex-col items-center bg-gradient-to-br from-white/60 via-blue-100/60 to-blue-200/60 dark:from-blue-900/60 dark:via-blue-950/60 dark:to-blue-900/60 backdrop-blur-2xl border border-white/50 dark:border-blue-800/50 shadow-2xl rounded-3xl">
-                <span className="mb-4 flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg">
-                  <Shield className="h-12 w-12 text-blue-600 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]" />
+              <Card className="p-6 md:p-10 flex flex-col items-center bg-gradient-to-br from-white/60 via-blue-100/60 to-blue-200/60 dark:from-blue-900/60 dark:via-blue-950/60 dark:to-blue-900/60 backdrop-blur-2xl border border-white/50 dark:border-blue-800/50 shadow-2xl rounded-3xl transition-all duration-300">
+                <span className="mb-4 flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg">
+                  <Shield className="h-10 w-10 md:h-12 md:w-12 text-blue-600 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]" />
                 </span>
-                <h3 className="text-2xl font-extrabold mb-3 text-blue-900 dark:text-blue-100">100% Seguro</h3>
-                <p className="text-muted-foreground text-center text-lg">
+                <h3 className="text-xl md:text-2xl font-extrabold mb-3 text-blue-900 dark:text-blue-100">100% Seguro</h3>
+                <p className="text-base md:text-lg text-muted-foreground text-center">
                   Proteção total dos dados e conformidade com todas as normas de segurança.
                 </p>
               </Card>
@@ -113,12 +113,12 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="p-10 flex flex-col items-center bg-gradient-to-br from-white/60 via-blue-100/60 to-blue-200/60 dark:from-blue-900/60 dark:via-blue-950/60 dark:to-blue-900/60 backdrop-blur-2xl border border-white/50 dark:border-blue-800/50 shadow-2xl rounded-3xl">
-                <span className="mb-4 flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg">
-                  <Star className="h-12 w-12 text-blue-600 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]" />
+              <Card className="p-6 md:p-10 flex flex-col items-center bg-gradient-to-br from-white/60 via-blue-100/60 to-blue-200/60 dark:from-blue-900/60 dark:via-blue-950/60 dark:to-blue-900/60 backdrop-blur-2xl border border-white/50 dark:border-blue-800/50 shadow-2xl rounded-3xl transition-all duration-300">
+                <span className="mb-4 flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg">
+                  <Star className="h-10 w-10 md:h-12 md:w-12 text-blue-600 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]" />
                 </span>
-                <h3 className="text-2xl font-extrabold mb-3 text-blue-900 dark:text-blue-100">Qualidade Premium</h3>
-                <p className="text-muted-foreground text-center text-lg">
+                <h3 className="text-xl md:text-2xl font-extrabold mb-3 text-blue-900 dark:text-blue-100">Qualidade Premium</h3>
+                <p className="text-base md:text-lg text-muted-foreground text-center">
                   Resultados profissionais com fidelidade pixel-perfect em cada clone.
                 </p>
               </Card>
@@ -228,7 +228,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <h3 className="text-2xl font-bold mb-4">
               Tenha uma página para anunciar em minutos!{' '}
-              <span className="bg-orange-500 text-white px-2 py-1 rounded">
+              <span className="bg-purple-500 text-white px-2 py-1 rounded">
                 Sem perder tempo mexendo com ferramentas complexas
               </span>
             </h3>
