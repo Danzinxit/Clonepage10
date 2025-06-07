@@ -363,7 +363,7 @@ export default function Home() {
                   97% OFF
                 </Badge>
               </div>
-              <p className="text-5xl font-extrabold mb-4 text-blue-600">R$ 29,90</p>
+              <p className="text-5xl font-extrabold mb-4 text-blue-600">R$ 19,90</p>
               <p className="text-muted-foreground">Pagamento único</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
